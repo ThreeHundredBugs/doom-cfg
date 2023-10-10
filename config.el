@@ -153,6 +153,11 @@
          ("<tab>" . 'my-tab)
          ("TAB" . 'my-tab)))
 
+(use-package blox
+  :bind (:map lua-prefix-mode-map
+              ("s" . blox-prompt-serve)
+              ("b" . blox-prompt-build)
+              ("t" . blox-test)))
 
 ;; persist-scope
 (defun clj-insert-persist-scope-macro ()
